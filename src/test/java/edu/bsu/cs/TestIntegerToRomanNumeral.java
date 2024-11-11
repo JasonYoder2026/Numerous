@@ -71,4 +71,29 @@ public class TestIntegerToRomanNumeral {
     public void testSubtractFrom1000() {
         assertEquals("CM", convert.convertToRomanNumeral(900));
     }
+
+    @Test
+    public void testConvert3() {
+        assertEquals("III", convert.convertToRomanNumeral(3));
+    }
+
+    @Test
+    public void testConvert1300() {
+        assertEquals("MCCC", convert.convertToRomanNumeral(1300));
+    }
+
+    @Test
+    public void testConvert673() {
+        assertEquals("DCLXXIII", convert.convertToRomanNumeral(673));
+    }
+
+    @Test
+    public void testConvert953() {
+        assertEquals("CMLIII", convert.convertToRomanNumeral(953));
+    }
+
+    @Test
+    public void testConvert85() {
+        assertEquals("LXXXV", convert.convertToRomanNumeral(85));
+    }
 }
