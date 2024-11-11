@@ -8,7 +8,14 @@ public class TestIntegerToRomanNumeral {
     IntegerToRomanNumeral convert = new IntegerToRomanNumeral();
 
     @Test
-    public void testConverting1() {
+    public void testConvert1() {
         assertEquals("I", convert.convertToRomanNumeral(1));
     }
+
+    @Test
+    public void testConvert5() {
+        assertEquals("V", convert.convertToRomanNumeral(5));
+    }
+
+
 }
