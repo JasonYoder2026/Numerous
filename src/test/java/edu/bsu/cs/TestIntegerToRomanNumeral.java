@@ -17,5 +17,8 @@ public class TestIntegerToRomanNumeral {
         assertEquals("V", convert.convertToRomanNumeral(5));
     }
 
-
+    @Test
+    public void testConvert10() {
+        assertEquals("X", convert.convertToRomanNumeral(10));
+    }
 }
