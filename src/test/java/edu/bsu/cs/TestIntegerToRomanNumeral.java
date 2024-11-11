@@ -23,7 +23,32 @@ public class TestIntegerToRomanNumeral {
     }
 
     @Test
+    public void testConvert50() {
+        assertEquals("L", convert.convertToRomanNumeral(50));
+    }
+
+    @Test
+    public void testConvert100() {
+        assertEquals("C", convert.convertToRomanNumeral(100));
+    }
+
+    @Test
+    public void testConvert500() {
+        assertEquals("D", convert.convertToRomanNumeral(500));
+    }
+
+    @Test
+    public void testConvert1000() {
+        assertEquals("M", convert.convertToRomanNumeral(1000));
+    }
+
+    @Test
     public void testSubtract1() {
         assertEquals("IV", convert.convertToRomanNumeral(4));
+    }
+
+    @Test
+    public void testSubtractFrom10() {
+        assertEquals("IX", convert.convertToRomanNumeral(9));
     }
 }

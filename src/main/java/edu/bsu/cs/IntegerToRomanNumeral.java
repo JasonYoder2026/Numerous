@@ -3,8 +3,8 @@ package edu.bsu.cs;
 public class IntegerToRomanNumeral {
 
     public String convertToRomanNumeral(int num) {
-        int[] values = {10, 5, 4, 1};
-        String[] numerals = {"X", "V", "IV", "I"};
+        int[] values = {1000, 500, 100, 50, 10, 9, 5, 4, 1};
+        String[] numerals = {"M", "D", "C", "L", "X", "IX", "V", "IV", "I"};
 
         StringBuilder romanNumeral = new StringBuilder();
 
