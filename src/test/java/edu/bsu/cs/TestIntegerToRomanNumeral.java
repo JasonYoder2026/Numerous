@@ -51,4 +51,24 @@ public class TestIntegerToRomanNumeral {
     public void testSubtractFrom10() {
         assertEquals("IX", convert.convertToRomanNumeral(9));
     }
+
+    @Test
+    public void testSubtractFrom50() {
+        assertEquals("XL", convert.convertToRomanNumeral(40));
+    }
+
+    @Test
+    public void testSubtractFrom100() {
+        assertEquals("XC", convert.convertToRomanNumeral(90));
+    }
+
+    @Test
+    public void testSubtractFrom500() {
+        assertEquals("CD", convert.convertToRomanNumeral(400));
+    }
+
+    @Test
+    public void testSubtractFrom1000() {
+        assertEquals("CM", convert.convertToRomanNumeral(900));
+    }
 }
